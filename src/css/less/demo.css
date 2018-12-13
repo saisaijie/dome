@@ -1,12 +1,14 @@
-a {
+li {
+  float: left;
   border-bottom: 1px dotted blue;
-  display: block;
-  width: 100%;
+  width: 33%;
+  margin-left: 0.5%;
   height: auto;
 }
-a.menu-list {
-  float: left;
+li.menu-list {
+  font-weight: 600;
+  margin-left: 0;
 }
-a i {
+li a {
   font-style: normal;
 }
