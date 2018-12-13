@@ -1,6 +1,10 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <ul class="menu">
+      <li>首页</li>
+      <li>设备管理</li>
+      <li>日志管理</li>
+    </ul>
   </div>
 </template>
 
@@ -19,18 +23,7 @@ export default {
 </style>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  .menu {   
+    height:auto;
+  }
 </style>
