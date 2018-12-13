@@ -1,0 +1,12 @@
+a {
+  border-bottom: 1px dotted blue;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+a.menu-list {
+  float: left;
+}
+a i {
+  font-style: normal;
+}

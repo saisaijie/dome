@@ -1,0 +1,16 @@
+@blue:blue;
+.border (@num) {
+    border-bottom:@num dotted @blue;
+}
+a{
+    &.menu-list{
+        float: left;
+    }
+    i{
+        font-style: normal;
+    }
+    .border(1px);
+    display: block;
+    width:100%;
+    height:auto;
+}
