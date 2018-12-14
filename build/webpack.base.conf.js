@@ -48,7 +48,7 @@ module.exports = {
   },
   module: {
     rules: [
-      ...(config.dev.useEslint ? [createLintingRule()] : []),
+     // ...(config.dev.useEslint ? [createLintingRule()] : []),//注销的内容是关闭了eslint监测
       {
         test: /\.vue$/,
         loader: 'vue-loader',

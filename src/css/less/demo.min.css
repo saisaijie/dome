@@ -6,11 +6,10 @@ li {
   height: auto;
 }
 li.menu-list {
-  font-weight: 800;
+  font-weight: 600;
   margin-left: 0;
 }
 li a {
-  color: black;
   font-style: normal;
 }
 li a:visited {

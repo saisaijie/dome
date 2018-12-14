@@ -1,13 +1,17 @@
 @blue:blue;
+@lightBlue:lightblue;
 .border (@num) {
     border-bottom:@num dotted @blue;
 }
 li{
     &.menu-list{
-       font-weight:600;
+       font-weight:800;
        margin-left:0;
     }
     a{
+        &:visited{color:@blue}
+        &:hover{color:@lightBlue}
+        color:black;
         font-style: normal;
     }
      float: left;
