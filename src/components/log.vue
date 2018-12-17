@@ -1,13 +1,20 @@
 <template>
   <div class="log">
-    <ul class="menu" v-for="(li,key,index) in msg">
-      <li v-bind:class="{'menu-list':index==0}">
+    <ul class="menu" v-for="(li,key,index) in  msg">
+      <li v-bind:class="{'menu-list':index==0}" >
         <a href="javascript:;" v-text='key+"=="+li.mes'></a>
       </li>
     </ul>
+    <ul>
+      <li v-for="(li,key,index) in $store.state.log_store.logData">
+        <a href="javascript:;" v-text='key+"=="+li.msg'></a>
+      </li>
+    </ul>
+     <router-link :to ="{name:'Main'}" >
+    <button @click="$store.dispatch('log_store')">保存</button>
+     </router-link>
   </div>
 </template>
-
 <script>
 export default {
   name: 'Log',

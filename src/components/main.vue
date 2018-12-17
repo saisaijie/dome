@@ -7,7 +7,8 @@
           </router-link>
       </li>
     </ul>
-    <span v-if="$store.state.dialog.show" v-text="$store.state.dialog.deviceData.first['msg']"></span>
+    <span v-if="$store.state.device_store.show" v-text="$store.state.device_store.deviceData.first['msg']"></span>
+     <span v-if="$store.state.log_store.show" v-text="$store.state.log_store.logData.first['msg']"></span>
   </div>
 </template>
 <script>

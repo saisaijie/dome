@@ -19,7 +19,7 @@ export default new Router({
     },{
       path: '/log',
       name: 'Log',
-      component: Device
+      component: Log
     }
   ]
 })
