@@ -21,6 +21,7 @@ export default {
         'second':{ "mes" : '设备管理' , "url" : 'Device' },
         'third':{ "mes" : '日志管理' , "url" : 'Log' }
       },
+      
       methods:{
         
       },
