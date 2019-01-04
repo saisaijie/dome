@@ -26,7 +26,6 @@ Vue.config.productionTip = false;
         },
         write: function (newVal,oldVal) { // view -> model 在写回数据之前格式化值
           console.log("newVal:"+newVal); 
-
           console.log("oldVal:"+oldVal);
           return newVal;
         }

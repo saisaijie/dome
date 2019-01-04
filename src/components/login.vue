@@ -24,14 +24,9 @@
 </template>
 <script>
 export default {
-  name: 'Main',
+  name: 'Login',
   data () {
     return {
-      msg: {        
-        'first':{ "mes" : '首页' , "url" : 'Main' },
-        'second':{ "mes" : '设备管理' , "url" : 'Device' },
-        'third':{ "mes" : '日志管理' , "url" : 'Log' }
-      },
       methods:{
         
       },
