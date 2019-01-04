@@ -11,7 +11,7 @@
       </li>
     </ul>
      <router-link :to ="{name:'Main'}" >
-    <button @click="$store.dispatch('log_store')">保存</button>
+    <button @click="$store.dispatch('dialog_store')">保存</button>
      </router-link>
   </div>
 </template>

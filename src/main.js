@@ -13,4 +13,9 @@ new Vue({
   store,
   components: { App },
   template: '<App/>'
-})
+});
+
+Vue.filter('dataFilter',function(value){
+    console.log(value);
+});
+

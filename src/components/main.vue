@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
-    <ul class="menu" v-for="(li,key,index) in msg">
-      <li  v-bind:class="{'menu-list':index==0}">
+    <ul class="menu">
+      <li  v-for="(li,key,index) in msg"  v-bind:class="{'menu-list':index==0}">
         <router-link :to ="{name:li.url}" >
             <a href="javascript:;" v-text='key+"=="+li.mes'></a>
           </router-link>
@@ -16,14 +16,18 @@ export default {
   name: 'Main',
   data () {
     return {
-      msg: {
-         
+      msg: {        
         'first':{ "mes" : '首页' , "url" : 'Main' },
         'second':{ "mes" : '设备管理' , "url" : 'Device' },
         'third':{ "mes" : '日志管理' , "url" : 'Log' }
       },
       methods:{
         
+      },
+      computed:{
+          computedName:function(){
+
+          }
       }
     }
   }
