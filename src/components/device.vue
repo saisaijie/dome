@@ -25,9 +25,7 @@ export default {
         'first':{ 'mes' : 'KVM设备' },
         'second':{ 'mes' : 'DPU设备' },
         'third':{ 'mes' : 'DPU资产设备' }
-      },
-
-      
+      },      
     }
   }
 }

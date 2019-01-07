@@ -7,6 +7,7 @@
           </router-link>
       </li>
     </ul>
+    <span ng-bind="reversedMessage"></span>
     <span v-if="$store.state.device_store.show" v-text="$store.state.device_store.deviceData.first['msg']"></span>
      <span v-if="$store.state.log_store.show" v-text="$store.state.log_store.logData.first['msg']"></span>
   </div>
@@ -21,13 +22,14 @@ export default {
         'second':{ "mes" : '设备管理' , "url" : 'Device' },
         'third':{ "mes" : '日志管理' , "url" : 'Log' }
       },
-      
+      name:'123456',
+
       methods:{
         
       },
       computed:{
-          computedName:function(){
-
+          reversedMessage:function(){
+           return  this.name.split('').reverse().join();
           }
       }
     }
